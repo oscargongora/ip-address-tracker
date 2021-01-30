@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  font-family: "Rubik";
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+.section-01 {
+  height: 280px;
+  width: calc(100vw - 48px);
+  background-image: url("./images/pattern-bg.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 24px;
+  position: relative;
+}
+.section-01 > h1 {
+  color: #fffeff;
+  font-size: 24px;
+  margin: 36px 0;
+}
+.section-01 > .form-g {
+  width: 100%;
+  max-width: 556px;
+  position: relative;
+}
+#ip-input {
+  height: 60px;
+  border: none;
+  border-radius: 15px;
+  width: calc(100% - 48px);
+  font-size: 14px;
+  padding: 0 24px;
+}
+#ip-input:focus {
+  outline: none;
+}
+#submit-ip-btn {
+  background-color: hsl(0, 0%, 17%);
+  stroke: none;
+  height: 60px;
+  width: 60px;
+  border-radius: 0 15px 15px 0;
+  position: absolute;
+  right: 0;
+  border: none;
+  cursor: pointer;
+}
+#submit-ip-btn:focus {
+  outline: none;
+}
+#details-box {
+  background-color: red;
+  height: 82px;
+  width: calc(100% - 48px);
+  max-width: 1110px;
+  position: absolute;
+  bottom: -82px;
+  background-color: #fffeff;
+  border-radius: 15px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.16);
+  padding: 40px 0;
+  display: flex;
+  z-index: 10;
+}
+#details-box .detail-card {
+  padding: 0 32px;
+}
+#details-box .detail-card h3 {
+  font-size: 10px;
+  text-transform: uppercase;
+  color: hsl(0, 0%, 59%);
+  margin-bottom: 22px;
+}
+#details-box .detail-card p {
+  font-size: 20px;
+  color: hsl(0, 0%, 17%);
+  font-weight: 700;
+}
+#details-box .separator {
+  height: 75px;
+  width: 1px;
+  background-color: hsl(0, 0%, 59%);
+}
+#map-section {
+  height: calc(100vh - 280px);
+  width: 100vw;
+  z-index: 1;
+}
+
+@media (max-width: 980px) {
+  .section-01 {
+    height: 300px;
+  }
+
+  .section-01 > h1 {
+    margin: 32px 0;
+    font-size: 20px;
+  }
+
+  #ip-input {
+    font-size: 14px;
+  }
+
+  #details-box {
+    height: 238px;
+    padding: 24px 0;
+    max-height: 294px;
+    bottom: -162px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #details-box .detail-card {
+    margin-bottom: 24px;
+  }
+
+  #details-box .detail-card h3 {
+    font-size: 8px;
+    margin-bottom: 12px;
+    text-align: center;
+  }
+
+  #details-box .detail-card p {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  #details-box .separator {
+    display: none;
+  }
+
+  #map-section {
+    height: 100vh;
+  }
+}
