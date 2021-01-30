@@ -1,0 +1,67 @@
+#ip-details {
+  background-color: red;
+  height: 82px;
+  width: calc(100% - 48px);
+  max-width: 1110px;
+  position: absolute;
+  bottom: -82px;
+  background-color: #fffeff;
+  border-radius: 15px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.16);
+  padding: 40px 0;
+  display: flex;
+  z-index: 10;
+}
+
+#ip-details .detail-card {
+  padding: 0 32px;
+}
+
+#ip-details .detail-card h3 {
+  font-size: 10px;
+  text-transform: uppercase;
+  color: hsl(0, 0%, 59%);
+  margin-bottom: 22px;
+}
+
+#ip-details .detail-card p {
+  font-size: 20px;
+  color: hsl(0, 0%, 17%);
+  font-weight: 700;
+}
+
+#ip-details .separator {
+  height: 75px;
+  width: 1px;
+  background-color: hsl(0, 0%, 59%);
+}
+
+@media (max-width: 980px) {
+  #ip-details {
+    height: 238px;
+    padding: 24px 0;
+    max-height: 294px;
+    bottom: -162px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #ip-details .detail-card {
+    margin-bottom: 24px;
+  }
+
+  #ip-details .detail-card h3 {
+    font-size: 8px;
+    margin-bottom: 12px;
+    text-align: center;
+  }
+
+  #ip-details .detail-card p {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  #ip-details .separator {
+    display: none;
+  }
+}

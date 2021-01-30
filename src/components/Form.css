@@ -1,0 +1,68 @@
+#ip-form {
+  height: 280px;
+  width: calc(100vw - 48px);
+  background-image: url("../images/pattern-bg.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 24px;
+  position: relative;
+}
+
+#ip-form > h1 {
+  color: #fffeff;
+  font-size: 24px;
+  margin: 36px 0;
+}
+
+#ip-form > .form-group {
+  width: 100%;
+  max-width: 556px;
+  position: relative;
+}
+
+#ip-input {
+  height: 60px;
+  border: none;
+  border-radius: 15px;
+  width: calc(100% - 48px);
+  font-size: 14px;
+  padding: 0 24px;
+}
+
+#ip-input:focus {
+  outline: none;
+}
+
+#submit-ip-form {
+  background-color: hsl(0, 0%, 17%);
+  stroke: none;
+  height: 60px;
+  width: 60px;
+  border-radius: 0 15px 15px 0;
+  position: absolute;
+  right: 0;
+  border: none;
+  cursor: pointer;
+}
+
+#submit-ip-form:focus {
+  outline: none;
+}
+
+@media (max-width: 980px) {
+  #ip-form {
+    height: 300px;
+  }
+
+  #ip-form > h1 {
+    margin: 32px 0;
+    font-size: 20px;
+  }
+
+  #ip-input {
+    font-size: 14px;
+  }
+}
