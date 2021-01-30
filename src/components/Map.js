@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
 import "./Map.css";
+import IconLocationSvg from "../images/icon-location.svg";
 
 const Map = ({ ipInfo }) => {
   useEffect(() => {
@@ -19,7 +20,7 @@ const Map = ({ ipInfo }) => {
         }
       ).addTo(map);
       const icon = L.icon({
-        iconUrl: "./images/icon-location.svg",
+        iconUrl: IconLocationSvg,
       });
       L.marker([lat, lng], { icon }).addTo(map);
     };
